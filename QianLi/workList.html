@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/workList.css" rel="stylesheet">
+    <title>千里IT-作品列表</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="toolbar">
+            <h1 class="title">千里作品展示</h1>
+            <form action="" class="search-area">
+                <div class="search-con">
+                    <input name="keyword" placeholder="请输入作品名或作者名搜索" type="text" class="search">
+                </div>
+                <input type="submit" value="">
+            </form>
+        </div>
+
+        <ul class="work">
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-pic"></div>
+                <div class="work-label">
+                    <i class="work-name">作品名</i>
+                    <a class="author">作者</a>
+                </div>
+            </li>
+
+        </ul>
+        <div class="more">
+            <a>查看更多</a>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            Array.from(document.querySelectorAll(".work-item")).forEach((i, p) => {
+                if (0 === (p + 1) % 2) {
+                    addClass("mr0", i);
+                }
+            });
+        }
+
+        function hasClass(cla, element) {
+            if (element.className.trim().length === 0) return false;
+            var allClass = element.className.trim().split(" ");
+            return allClass.indexOf(cla) > -1;
+        }
+
+        function addClass(cla, element) {
+            if (!hasClass(cla, element)) {
+                if (element.setAttribute) {
+                    element.setAttribute("class", element.getAttribute("class") + " " + cla);
+                } else {
+                    element.className = element.className + " " + cla;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

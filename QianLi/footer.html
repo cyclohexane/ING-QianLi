@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/reset.css" rel="stylesheet">
+    <style>
+        /*重置样式*/
+        
+        footer {
+            width: 100%;
+            padding: 50px 0;
+            height: 144px;
+            background-color: #112f55;
+            font-size: 30px;
+            color: #fff;
+        }
+        
+        footer .inner {
+            width: 1120px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        footer .intr {
+            width: 500px;
+            float: left;
+            font-size: 14px;
+            line-height: 24px;
+            text-indent: 28px;
+            margin-right: 80px;
+        }
+        
+        footer .link {
+            width: 540px;
+            float: left;
+            margin-top: 20px;
+        }
+        
+        .link li {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        
+        .link li:last-child {
+            margin-right: 0;
+        }
+        
+        .weibo {
+            background: url("./img/icon.png") no-repeat;
+        }
+        
+        .qq {
+            background: url("./img/icon.png") no-repeat;
+            background-position: -130px 0;
+        }
+        
+        .wechat {
+            background: url("./img/icon.png") no-repeat;
+            background-position: -260px 0;
+        }
+        
+        .link .wechat-qrcode {
+            background: url("./img/qrcode.jpg") no-repeat;
+            background-size: cover;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="inner">
+            <div class="intr">
+                <p>
+                    千里IT学会，创建于2007年9月29日，是以Teamwork和Creation为团队核心精神的学生IT团队，名称来自团队所秉着“千里之行，始于足下”的实干精神，对于强调动手能力的实践性学科，我们不断探索和实践。
+                </p>
+                <p>
+                    团队创立之初，由武汉纺织大学管理学院信管电商专业的学生组成，自成立以来，团队成员对专业知识的研究，探讨，实践为主。在提高自身专业素质的同时，也体现了生产力，开发了一批批网站包括学校、企业、政府网站。
+                </p>
+            </div>
+            <div class="link">
+                <ul>
+                    <li class="weibo"></li>
+                    <li class="qq"></li>
+                    <li class="wechat" onmouseover="showQrcode()" onmouseout="closeQrcode()"></li>
+                    <li class="wechat-qrcode"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showQrcode() {
+            document.querySelector(".wechat-qrcode").style.display = "inline-block";
+        }
+
+        function closeQrcode() {
+            document.querySelector(".wechat-qrcode").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.upload-source {
+    width: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.upload-source form {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.uploadPicture {
+    height: 140px;
+    margin-bottom: 30px;
+}
+
+.uploadVideo {
+    height: 200px;
+}
+
+.upload-source input[type=submit] {
+    margin-top: 20px;
+}
+
+.upload-source h1 {
+    padding-bottom: 20px;
+}

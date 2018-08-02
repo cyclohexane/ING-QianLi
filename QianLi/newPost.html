@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/newPost.css" rel="stylesheet">
+    <title>千里IT-发布新帖</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="post-con">
+            <form action="" class="post">
+                <h1 class="title">发布新帖</h1>
+                <select name="catego" id="catego">
+                    <option selected disabled style="display: none;" value="">---请选择帖子类型---</option> 
+                    <option value="">问题贴</option>
+                    <option value="">学习贴</option>
+                    </select><br>
+                <input type="text" name="title" placeholder="标题"><br>
+                <textarea name="content" placeholder="正文"></textarea><br>
+                <input type="submit" value="发布">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/postList.css" rel="stylesheet">
+    <title>千里IT-帖子列表</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="post-list-con">
+            <div class="toolbar">
+                <div class="toolbar-title">条件筛选</div>
+                <form action="">
+                    <div class="catego-search">
+                        <span>按帖子类型筛选：</span>
+                        <select name="catego">
+                            <option selected disabled style="display: none;" value="">---请选择帖子类型---</option> 
+                            <option value="">全部</option>
+                            <option value="">问题贴</option>
+                            <option value="">学习贴</option>
+                            </select>
+                    </div>
+                    <div class="keyword-search">
+                        <span>按关键词筛选：</span>
+                        <input type="text" name="keyword" placeholder="请输入关键词">
+                    </div>
+                    <input type="submit" value="筛选">
+                </form>
+            </div>
+            <div class="list-title">帖子列表</div>
+            <div class="post-list">
+                <ul>
+                    <li class="post-item">
+                        <div class="date">2018-06-02</div>
+                        <div class="catego">学习贴</div>
+                        <div class="title">帖子标题帖子标题帖子标题帖子标题</div>
+                        <div class="author">王小明</div>
+                    </li>
+                    <li class="post-item">
+                        <div class="date">2018-06-02</div>
+                        <div class="catego">学习贴</div>
+                        <div class="title">帖子标题帖子标题帖子标题帖子标题</div>
+                        <div class="author">王小明</div>
+                    </li>
+                    <li class="post-item">
+                        <div class="date">2018-06-02</div>
+                        <div class="catego">学习贴</div>
+                        <div class="title">帖子标题帖子标题帖子标题帖子标题</div>
+                        <div class="author">王小明</div>
+                    </li>
+                    <li class="post-item">
+                        <div class="date">2018-06-02</div>
+                        <div class="catego">学习贴</div>
+                        <div class="title">帖子标题帖子标题帖子标题帖子标题</div>
+                        <div class="author">王小明</div>
+                    </li>
+                    <li class="post-item">
+                        <div class="date">2018-06-02</div>
+                        <div class="catego">学习贴</div>
+                        <div class="title">帖子标题帖子标题帖子标题帖子标题</div>
+                        <div class="author">王小明</div>
+                    </li>
+                </ul>
+                <div class="pager-con">
+                    <ul class="pager">
+                        <li class="first">
+                            <a href="javascript:void(0)">首页</a>
+                        </li>
+                        <li class="prev">
+                            <a href="javascript:void(0)">上一页</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">1</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">3</a>
+                        </li>
+                        <li class="next">
+                            <a href="javascript:void(0)">下一页</a>
+                        </li>
+                        <li class="last">
+                            <a href="javascript:void(0)">尾页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>

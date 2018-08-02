@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>千里IT后台管理系统</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">千里IT官网后台管理系统</div>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img"> 贤心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退出</a></li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item"><a href="">用户管理</a></li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">论坛管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">设置分类</a></dd>
+                            <dd><a href="javascript:;">帖子管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">资源管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">设置分类</a></dd>
+                            <dd><a href="javascript:;">资源管理</a></dd>
+                            <dd><a href="javascript:;">资源上传</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">网站管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">版块设计</a></dd>
+                            <dd><a href="javascript:;">公告管理</a></dd>
+                            <dd><a href="javascript:;">作品管理</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <table class="layui-table">
+                <colgroup>
+                    <col width="100">
+                    <col width="500">
+                    <col width="200">
+                    <col>
+                    <col>
+                    <col width="200">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>标题</th>
+                        <th>发布者</th>
+                        <th>发布时间</th>
+                        <th>审核状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>人生就像是一场修行</td>
+                        <td>贤心</td>
+                        <td>2016-11-29</td>
+                        <td>未审核</td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">通过</a> <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="look">预览</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="pag">
+                <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1"><a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a><span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span><a href="javascript:;" data-page="2">2</a><a href="javascript:;"
+                        data-page="3">3</a><a href="javascript:;" data-page="4">4</a><a href="javascript:;" data-page="5">5</a><a href="javascript:;" data-page="6">6</a><a href="javascript:;" data-page="7">7</a><a href="javascript:;" class="layui-laypage-next"
+                        data-page="2">下一页</a><span class="layui-laypage-skip">到第<input type="text" min="1" value="1" class="layui-input">页<button type="button" class="layui-laypage-btn">确定</button></span><span class="layui-laypage-count">共 65 条</span>
+                    <span class="layui-laypage-limits"><select lay-ignore=""><option value="10" selected="">10 条/页</option><option value="20">20 条/页</option><option value="30">30 条/页</option><option value="40">40 条/页</option><option value="50">50 条/页</option></select></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../layui/layui.all.js "></script>
+    <script>
+        layui.use('element', function() {
+            var element = layui.element;
+        });
+    </script>
+</body>
+
+</html>

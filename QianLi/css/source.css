@@ -1,0 +1,151 @@
+.main {
+    width: 1200px;
+}
+
+.group {
+    width: 1200px;
+}
+
+.group .wrap {
+    margin-top: 10px;
+    display: table;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 663311 */
+    src: url('//at.alicdn.com/t/font_663311_janb2nsawpi.eot');
+    src: url('//at.alicdn.com/t/font_663311_janb2nsawpi.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_663311_janb2nsawpi.woff') format('woff'), url('//at.alicdn.com/t/font_663311_janb2nsawpi.ttf') format('truetype'), url('//at.alicdn.com/t/font_663311_janb2nsawpi.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+}
+
+.row .cell:first-child {
+    width: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    width: 22px;
+}
+
+.row .cell:first-child span {
+    margin-top: -34px;
+    font-weight: 100;
+    float: right;
+    font-size: 19px;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0.4em;
+    margin-right: 12px;
+    font-family: "楷体";
+}
+
+.row .cell:first-child span strong {
+    font-weight: 100;
+    font-size: 1.8em;
+}
+
+.row .cell:first-child .iconfont {
+    font-size: 22px;
+    color: rgb(6, 10, 67);
+}
+
+.row .cell:last-child {
+    width: 40px;
+    color: darkgray;
+    font-size: 20px;
+    font-family: "黑体";
+    font-weight: 200;
+}
+
+.row .cell:last-child span {
+    display: inline-block;
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.row {
+    display: table-row;
+    height: 150px;
+}
+
+.cell {
+    display: table-cell;
+    width: 215px;
+    border: 0.5px solid #cccccc;
+    /*display: table-cell时margin会失效*/
+}
+
+.upload {
+    width: 1200px;
+    height: 190px;
+}
+
+.upload span {
+    display: inline-block;
+    margin-top: 20px;
+    color: darkgray;
+    font-size: 18px;
+    font-family: "楷体";
+    font-weight: 200;
+    line-height: 26px;
+    margin-left: 30px;
+}
+
+.btn-up {
+    width: 235px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    background-color: rgb(69, 139, 224);
+    color: #FFFFFF;
+    font-weight: 200px;
+    font-family: "楷体";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-up a {
+    color: #FFFFFF;
+}
+
+.sears {
+    width: 1200px;
+    height: 400px;
+    background: url(../img/bg-regist.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.sears h2 {
+    padding-top: 20px;
+    padding-top: 20px;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+
+.sears select {
+    width: 150px;
+    height: 28px;
+    padding-left: 8px;
+}
+
+.sears .se-group {
+    margin-left: 390px;
+    margin-right: 110px;
+}

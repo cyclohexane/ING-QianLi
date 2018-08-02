@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <title>千里IT-首页</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="display">
+                <div class="slideTxtBox">
+                    <div class="bd">
+                        <ul>
+                            <li><a href="http://www.SuperSlide2.com" target="_blank">SuperSlide2.0正式发布！</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="http://www.SuperSlide2.com" target="_blank">名师教作文：３妙招巧写高分</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="http://www.SuperSlide2.com" target="_blank">澳大利亚八大名校招生说明会</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="hd">
+                        <ul>
+                            <li>Java组</li>
+                            <li>Web组</li>
+                            <li>设计组</li>
+                            <li>微信组</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hot">
+                    <h2 class="hot-banner">千里IT热门频道</h2>
+                    <div class="hot-item"></div>
+                    <div class="hot-item"></div>
+                    <div class="hot-item"></div>
+                </div>
+            </div>
+            <ul class="course">
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+                <li class="course-item">
+                    <div class="course-pic"></div>
+                    <div class="course-label">
+                        <i class="course-author">制作人</i>
+                        <a class="other-course">其他教程</a>
+                    </div>
+                    <h2 class="course-name">课程名称</h2>
+                </li>
+            </ul>
+            <div class="more">
+                <a>全部课程</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+    <script>
+        jQuery(".slideTxtBox").slide({
+            autoPlay: true
+        });
+
+        window.onload = function() {
+            Array.from(document.querySelectorAll(".course-item")).forEach((i, p) => {
+                if (0 === (p + 1) % 4) {
+                    addClass("mr0", i);
+                }
+            });
+        }
+
+        function hasClass(cla, element) {
+            if (element.className.trim().length === 0) return false;
+            var allClass = element.className.trim().split(" ");
+            return allClass.indexOf(cla) > -1;
+        }
+
+        function addClass(cla, element) {
+            if (!hasClass(cla, element)) {
+                if (element.setAttribute) {
+                    element.setAttribute("class", element.getAttribute("class") + " " + cla);
+                } else {
+                    element.className = element.className + " " + cla;
+                }
+            }
+        }
+
+        function showQrcode() {
+            document.querySelector(".wechat-qrcode").style.display = "inline-block";
+        }
+
+        function closeQrcode() {
+            document.querySelector(".wechat-qrcode").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
